@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .video__container {
+            position: relative;
+        }
+
+        .timing {
+            position: absolute;
+            margin: 0;
+            top: 0;
+            font-size: 30px;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Задание 3</h1>
+    <p>3. Реализовать воспроизведение видеофайла (желательно формата webm). Никаких элементов управления на блоке быть
+        не должно, только предзагруженный первый кадр видео и текущее время видео в формате MM:SS:mmm. Видео должно
+        запускаться и ставиться на паузу по клику мыши. По окончанию видео останавливается и возвращается на начальный
+        кадр;</p>
+    <div class="video__container">
+        <video width='600' height="400" poster="">
+            <source src="https://dl8.webmfiles.org/elephants-dream.webm" type='video/webm'>
+        </video>
+        <p class="timing">00:00:000</p>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

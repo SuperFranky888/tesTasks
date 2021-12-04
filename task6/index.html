@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+        .task6 {
+            display: flex;
+        }
+        .parent {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            margin: 10px auto;
+        }
+        .parent>div {
+            border: 2px dashed green;
+            padding: 20px;
+        }
+        /* для задания */
+        .containerB {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Задание 6</h1>
+    <p>6. Сверстать 2 блока (1-Главный, 2-Дочерний). Разместить блок 2 внутри блока 1 строго посередине несколькими
+        способами.
+        А) с помощью JS;
+        Б) с помощью CSS;
+        В) используя только HTML.</p>
+    <div class="task6">
+        <div class="containerA parent">
+            <div>А(JS)</div>
+        </div>
+        <div class="containerB parent">
+            <div>Б(CSS)</div>
+        </div>
+        <!-- стили заданы внутри тега -->
+        <div class="containerC parent" style="display:flex; justify-content: center; align-items: center;">
+            <div>В(HTML)</div>
+        </div>
+    </div>
+
+    <script>
+        // стили центрирующие дочений блок в контейнере А
+        let containerA = document.querySelector('.containerA');
+        containerA.style.display = 'flex';
+        containerA.style.justifyContent = 'center';
+        containerA.style.alignItems = 'center';
+    </script>
+</body>
+
+</html>
